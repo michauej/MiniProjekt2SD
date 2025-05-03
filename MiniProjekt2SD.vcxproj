@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArrayPriorityQueue.cpp" />
     <ClCompile Include="MiniProjekt2SD.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrayPriorityQueue.h" />
+    <ClInclude Include="IQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
