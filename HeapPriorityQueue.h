@@ -22,7 +22,7 @@ public:
     ~HeapPriorityQueue();
 
     void insert(int value, int priority) override;
-    int extractMax() override;  // Zmieniamy void na int by zwraca³ wartoœæ
+    int extractMax() override;  
     void changePriority(int value, int priority) override;
     int getMax() override;
     int getSize() override;
