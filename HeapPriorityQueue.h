@@ -11,20 +11,19 @@ private:
 
     Element* heap;
     int capacity;
-    int size;
+    int currentSize;
 
     void heapifyUp(int index);
     void heapifyDown(int index);
     void resize();
 
 public:
-    HeapPriorityQueue(int initialCapacity = 10);
-    ~HeapPriorityQueue();
-
+    HeapPriorityQueue(int cap = 10);
+    ~HeapPriorityQueue() override;
     void insert(int value, int priority) override;
-    int extractMax() override;  
-    void changePriority(int value, int priority) override;
+    void extractMax() override;
     int getMax() override;
+    void changePriority(int value, int priority) override;
     int getSize() override;
-    bool isEmpty() const;
+    void show();
 };
