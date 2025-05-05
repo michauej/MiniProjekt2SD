@@ -49,7 +49,7 @@ void test() {
                 heapTotal += duration_cast<nanoseconds>(end - start).count();
             }
         }
-        cout << size << "\t" << arrayTotal / DATASET_COUNT / 10 << "\t\t" << heapTotal / DATASET_COUNT / 10 << endl;
+        cout << size << "\t" << arrayTotal / DATASET_COUNT / repeat << "\t\t" << heapTotal / DATASET_COUNT / repeat << endl;
 
     }
 
@@ -81,7 +81,7 @@ void test() {
             end = high_resolution_clock::now();
             heapTotal += duration_cast<nanoseconds>(end - start).count();
         }
-        cout << size << "\t" << arrayTotal / DATASET_COUNT << "\t\t" << heapTotal / DATASET_COUNT << endl;
+        cout << size << "\t" << arrayTotal / DATASET_COUNT / repeat << "\t\t" << heapTotal / DATASET_COUNT / repeat << endl;
     }
 
     cout << "=== Find Max TEST ===" << endl;
@@ -113,7 +113,7 @@ void test() {
                 heapTotal += duration_cast<nanoseconds>(end - start).count();
             }
         }
-        cout << size << "\t" << arrayTotal / DATASET_COUNT << "\t\t" << heapTotal / DATASET_COUNT << endl;
+        cout << size << "\t" << arrayTotal / DATASET_COUNT / repeat << "\t\t" << heapTotal / DATASET_COUNT / repeat << endl;
     }
     cout << "=== Change priority TEST ===" << endl;
     cout << "Size\tArrayPQ(us)\tHeapPQ(us)" << endl;
@@ -149,7 +149,7 @@ void test() {
                 heapTotal += duration_cast<nanoseconds>(end - start).count();
             }
         }
-        cout << size << "\t" << arrayTotal / DATASET_COUNT << "\t\t" << heapTotal / DATASET_COUNT << endl;
+        cout << size << "\t" << arrayTotal / DATASET_COUNT / repeat << "\t\t" << heapTotal / DATASET_COUNT / repeat << endl;
 
     }
 
@@ -181,7 +181,7 @@ void test() {
                 heapTotal += duration_cast<nanoseconds>(end - start).count();
             }
         }
-        cout << size << "\t" << arrayTotal / DATASET_COUNT << "\t\t" << heapTotal / DATASET_COUNT << endl;
+        cout << size << "\t" << arrayTotal / DATASET_COUNT / repeat << "\t\t" << heapTotal / DATASET_COUNT / repeat << endl;
 
     }
 }
