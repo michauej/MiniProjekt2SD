@@ -130,11 +130,13 @@
     <ClCompile Include="ArrayPriorityQueue.cpp" />
     <ClCompile Include="HeapPriorityQueue.cpp" />
     <ClCompile Include="MiniProjekt2SD.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayPriorityQueue.h" />
     <ClInclude Include="HeapPriorityQueue.h" />
     <ClInclude Include="IQueue.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
